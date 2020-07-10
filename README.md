@@ -1,11 +1,34 @@
-# Sanity Blogging Content Studio
+# Centre for Urban Transitions Backend
 
-Congratulations, you have now installed the Sanity Content Studio, an open source real-time content editing environment connected to the Sanity backend.
+Sanity Studio for the Swinburne Centre for Urban Transitions website.
 
-Now you can do the following things:
+## Prerequisites
 
-- [Read “getting started” in the docs](https://www.sanity.io/docs/introduction/getting-started?utm_source=readme)
-- Check out the example frontend: [React/Next.js](https://github.com/sanity-io/tutorial-sanity-blog-react-next)
-- [Read the blog post about this template](https://www.sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=readme)
-- [Join the community Slack](https://slack.sanity.io/?utm_source=readme)
-- [Extend and build plugins](https://www.sanity.io/docs/content-studio/extending?utm_source=readme)
+- You will need [NodeJS](https://nodejs.org/) installed on your system.
+- Install the Sanity CLI `npm i -g @sanity/cli`
+
+## Setup
+
+Get the code by cloning the repository using git:
+
+```
+git clone https://github.com/jonowu/centre-for-urban-transitions-backend.git
+```
+
+Once downloaded, navigate into the directory:
+
+```
+cd centre-for-urban-transitions-backend
+```
+
+And install dependencies with:
+
+```
+npm install
+```
+
+Then start the project with:
+
+```
+sanity start
+```
