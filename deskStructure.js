@@ -36,10 +36,6 @@ export default () =>
         .title('Contact Us')
         .child(S.document().schemaType('contactPage').documentId('contactPage'))
         .icon(FaEnvelope),
-      S.listItem()
-        .title('Single Pages') // creates the settings item in the first pane
-        .schemaType('page')
-        .child(S.documentTypeList('page').title('Pages')),
       S.divider(),
       ...S.documentTypeListItems().filter(
         (listItem) => !hiddenTypes.includes(listItem.getId())
