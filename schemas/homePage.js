@@ -14,9 +14,10 @@ export default {
       type: 'text',
     },
     {
-      name: 'heroImage',
-      title: 'Hero Image',
-      type: 'image',
+      name: 'content',
+      type: 'array',
+      title: 'Page sections',
+      of: [{ type: 'hero' }],
     },
   ],
 };
