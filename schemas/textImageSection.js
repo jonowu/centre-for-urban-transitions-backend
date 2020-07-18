@@ -6,7 +6,7 @@ export default {
     {
       name: 'label',
       type: 'string',
-      title: 'Label',
+      title: 'Pre-Heading',
     },
     {
       name: 'heading',
@@ -24,6 +24,15 @@ export default {
       title: 'Image',
       options: {
         hotspot: true,
+      },
+    },
+    {
+      name: 'mediaPosition',
+      type: 'string',
+      title: 'Image position',
+      options: {
+        list: ['left', 'right'],
+        layout: 'radio',
       },
     },
   ],
