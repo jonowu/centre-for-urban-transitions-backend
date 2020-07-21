@@ -18,48 +18,28 @@ export default {
       },
     },
     {
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: { type: 'author' },
-    },
-    {
-      name: 'mainImage',
-      title: 'Main image',
+      name: 'thumbnail',
+      title: 'Thumbnail',
       type: 'image',
       options: {
         hotspot: true,
       },
     },
     {
-      name: 'categories',
-      title: 'Categories',
+      name: 'content',
       type: 'array',
-      of: [{ type: 'reference', to: { type: 'category' } }],
-    },
-    {
-      name: 'publishedAt',
-      title: 'Published at',
-      type: 'datetime',
-    },
-    {
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
+      title: 'Page sections',
+      of: [
+        { type: 'hero' },
+        { type: 'textSection' },
+        { type: 'textImageSection' },
+      ],
     },
   ],
-
   preview: {
     select: {
       title: 'title',
-      author: 'author.name',
-      media: 'mainImage',
-    },
-    prepare(selection) {
-      const { author } = selection;
-      return Object.assign({}, selection, {
-        subtitle: author && `by ${author}`,
-      });
+      media: 'thumbnail',
     },
   },
 };
