@@ -69,6 +69,15 @@ export default () =>
                     .documentId('contact')
                 )
                 .icon(FaFile),
+              S.listItem()
+                .title('Our Research')
+                .child(
+                  S.editor()
+                    .id('researchPage')
+                    .schemaType('page')
+                    .documentId('research')
+                )
+                .icon(FaFile),
             ])
         ),
       S.divider(),
