@@ -36,6 +36,32 @@ export default () =>
         .title('Contact Us')
         .child(S.document().schemaType('contactPage').documentId('contactPage'))
         .icon(FaEnvelope),
+      S.listItem()
+        .title('Pages')
+        .child(
+          S.list()
+            .title('Pages')
+            .items([
+              S.listItem()
+                .title('About')
+                .child(
+                  S.editor()
+                    .id('aboutPage')
+                    .schemaType('page')
+                    .documentId('about')
+                )
+                .icon(FaFile),
+              S.listItem()
+                .title('Contact')
+                .child(
+                  S.editor()
+                    .id('contactPage')
+                    .schemaType('page')
+                    .documentId('contact')
+                )
+                .icon(FaFile),
+            ])
+        ),
       S.divider(),
       ...S.documentTypeListItems().filter(
         (listItem) => !hiddenTypes.includes(listItem.getId())

@@ -15,6 +15,7 @@ import contactPage from './contactPage';
 import hero from './hero';
 import textSection from './textSection';
 import textImageSection from './textImageSection';
+import page from './page';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -34,6 +35,7 @@ export default createSchema({
     hero,
     textSection,
     textImageSection,
+    page,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
