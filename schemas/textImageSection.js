@@ -27,6 +27,12 @@ export default {
       },
     },
     {
+      name: 'link',
+      type: 'string',
+      description: 'Optional',
+      title: 'URL to link to',
+    },
+    {
       name: 'mediaPosition',
       type: 'string',
       title: 'Image position',
