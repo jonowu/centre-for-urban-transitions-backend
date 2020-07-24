@@ -17,27 +17,19 @@ export default () =>
     .title('Content')
     .items([
       S.listItem()
-        .title('Home Page')
-        .child(S.document().schemaType('homePage').documentId('homePage'))
-        .icon(FaHome),
-      S.listItem()
-        .title('About Us')
-        .child(S.document().schemaType('aboutPage').documentId('aboutPage'))
-        .icon(FaInfo),
-      S.listItem()
-        .title('Our Research')
+        .title('Research')
         .schemaType('researchPost')
         .child(S.documentTypeList('researchPost').title('Research posts'))
         .icon(FaPencilAlt),
       S.listItem().title('Transitions Resources').icon(FaRegNewspaper),
       S.listItem().title('PhD Life').icon(FaUserGraduate),
-      S.listItem().title('Events').icon(FaRegCalendarAlt),
       S.listItem()
-        .title('Contact Us')
-        .child(S.document().schemaType('contactPage').documentId('contactPage'))
-        .icon(FaEnvelope),
+        .title('Events')
+        .schemaType('event')
+        .child(S.documentTypeList('event').title('Events'))
+        .icon(FaRegCalendarAlt),
       S.listItem()
-        .title('Pages')
+        .title('Single Pages')
         .child(
           S.list()
             .title('Pages')
@@ -50,7 +42,7 @@ export default () =>
                     .schemaType('page')
                     .documentId('home')
                 )
-                .icon(FaFile),
+                .icon(FaHome),
               S.listItem()
                 .title('About')
                 .child(
@@ -59,7 +51,7 @@ export default () =>
                     .schemaType('page')
                     .documentId('about')
                 )
-                .icon(FaFile),
+                .icon(FaInfo),
               S.listItem()
                 .title('Contact')
                 .child(
@@ -68,7 +60,7 @@ export default () =>
                     .schemaType('page')
                     .documentId('contact')
                 )
-                .icon(FaFile),
+                .icon(FaEnvelope),
               S.listItem()
                 .title('Our Research')
                 .child(
@@ -77,7 +69,16 @@ export default () =>
                     .schemaType('page')
                     .documentId('research')
                 )
-                .icon(FaFile),
+                .icon(FaPencilAlt),
+              S.listItem()
+                .title('Events')
+                .child(
+                  S.editor()
+                    .id('eventsPage')
+                    .schemaType('page')
+                    .documentId('events')
+                )
+                .icon(FaRegCalendarAlt),
             ])
         ),
       S.divider(),
