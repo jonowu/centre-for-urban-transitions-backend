@@ -4,14 +4,15 @@ export default {
   title: 'Hero',
   fields: [
     {
+      name: 'preHeading',
+      type: 'string',
+      title: 'Pre-Heading',
+      description: 'An optional pre-heading that goes above the main heading.',
+    },
+    {
       name: 'heading',
       type: 'string',
       title: 'Heading',
-    },
-    {
-      name: 'tagline',
-      type: 'string',
-      title: 'Tagline',
     },
     {
       name: 'backgroundImage',
