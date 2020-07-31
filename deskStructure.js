@@ -90,18 +90,25 @@ export default () =>
       S.divider(),
 
       S.listItem()
-        .title('Research')
+        .title('Research Posts')
         .schemaType('researchPost')
         .child(S.documentTypeList('researchPost').title('Research posts'))
         .icon(FaPencilAlt),
-      S.listItem().title('Transitions Resources').icon(FaRegNewspaper),
-      S.listItem().title('PhD Life').icon(FaUserGraduate),
+      S.listItem()
+        .title('Resource Posts')
+        .schemaType('resourcePost')
+        .child(S.documentTypeList('resourcePost').title('Resource posts'))
+        .icon(FaRegNewspaper),
+      S.listItem()
+        .title('Phd Life Blog')
+        .schemaType('blogPost')
+        .child(S.documentTypeList('blogPost').title('Blog posts'))
+        .icon(FaUserGraduate),
       S.listItem()
         .title('Events')
         .schemaType('event')
         .child(S.documentTypeList('event').title('Events'))
         .icon(FaRegCalendarAlt),
-
       /*
       ...S.documentTypeListItems().filter(
         (listItem) => !hiddenTypes.includes(listItem.getId())
