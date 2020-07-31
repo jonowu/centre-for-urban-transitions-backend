@@ -17,19 +17,7 @@ export default () =>
     .title('Content')
     .items([
       S.listItem()
-        .title('Research')
-        .schemaType('researchPost')
-        .child(S.documentTypeList('researchPost').title('Research posts'))
-        .icon(FaPencilAlt),
-      S.listItem().title('Transitions Resources').icon(FaRegNewspaper),
-      S.listItem().title('PhD Life').icon(FaUserGraduate),
-      S.listItem()
-        .title('Events')
-        .schemaType('event')
-        .child(S.documentTypeList('event').title('Events'))
-        .icon(FaRegCalendarAlt),
-      S.listItem()
-        .title('Single Pages')
+        .title('Main Pages')
         .child(
           S.list()
             .title('Pages')
@@ -80,6 +68,15 @@ export default () =>
                 )
                 .icon(FaUserGraduate),
               S.listItem()
+                .title('Resources')
+                .child(
+                  S.editor()
+                    .id('resourcesPage')
+                    .schemaType('page')
+                    .documentId('resources')
+                )
+                .icon(FaFile),
+              S.listItem()
                 .title('Events')
                 .child(
                   S.editor()
@@ -91,7 +88,23 @@ export default () =>
             ])
         ),
       S.divider(),
+
+      S.listItem()
+        .title('Research')
+        .schemaType('researchPost')
+        .child(S.documentTypeList('researchPost').title('Research posts'))
+        .icon(FaPencilAlt),
+      S.listItem().title('Transitions Resources').icon(FaRegNewspaper),
+      S.listItem().title('PhD Life').icon(FaUserGraduate),
+      S.listItem()
+        .title('Events')
+        .schemaType('event')
+        .child(S.documentTypeList('event').title('Events'))
+        .icon(FaRegCalendarAlt),
+
+      /*
       ...S.documentTypeListItems().filter(
         (listItem) => !hiddenTypes.includes(listItem.getId())
       ),
+      */
     ]);
