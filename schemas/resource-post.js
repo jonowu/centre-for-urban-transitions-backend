@@ -40,6 +40,7 @@ export default {
         { type: 'hero' },
         { type: 'textSection' },
         { type: 'textImageSection' },
+        { type: 'downloadSection' },
       ],
     },
   ],

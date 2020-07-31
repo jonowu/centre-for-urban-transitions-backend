@@ -14,6 +14,7 @@ import aboutPage from './aboutPage';
 import contactPage from './contactPage';
 import hero from './hero';
 import textSection from './textSection';
+import downloadSection from './downloadSection';
 import textImageSection from './textImageSection';
 import page from './page';
 import event from './event';
@@ -42,6 +43,7 @@ export default createSchema({
     event,
     blogPost,
     resourcePost,
+    downloadSection,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
