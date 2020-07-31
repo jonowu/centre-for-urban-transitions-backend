@@ -2,6 +2,17 @@ export default {
   type: 'object',
   name: 'textImageSection',
   title: 'Text with Image',
+  validation: (Rule) =>
+    Rule.custom(
+      (fields = {}) =>
+        !fields.page || !fields.link || 'Only one link type is allowed'
+    ),
+  fieldsets: [
+    {
+      title: 'Link',
+      name: 'link',
+    },
+  ],
   fields: [
     {
       name: 'label',
@@ -26,12 +37,19 @@ export default {
         hotspot: true,
       },
     },
+
     {
-      name: 'link',
+      title: 'Title',
+      name: 'title',
       type: 'string',
-      description: 'Optional',
-      title: 'URL to link to',
     },
+    {
+      title: 'External link',
+      name: 'link',
+      type: 'url',
+      fieldset: 'link',
+    },
+
     {
       name: 'mediaPosition',
       type: 'string',
