@@ -71,6 +71,15 @@ export default () =>
                 )
                 .icon(FaPencilAlt),
               S.listItem()
+                .title('Phd Life')
+                .child(
+                  S.editor()
+                    .id('phdLifePage')
+                    .schemaType('page')
+                    .documentId('phdLife')
+                )
+                .icon(FaUserGraduate),
+              S.listItem()
                 .title('Events')
                 .child(
                   S.editor()
