@@ -18,6 +18,15 @@ export default {
       type: 'blockContent',
       title: 'Text',
     },
+    {
+      name: 'textAlignment',
+      type: 'string',
+      title: 'Text alignment',
+      options: {
+        list: ['left', 'center', 'right'],
+        layout: 'radio',
+      },
+    },
   ],
   preview: {
     select: {
