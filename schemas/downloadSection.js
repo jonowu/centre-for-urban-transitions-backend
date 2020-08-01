@@ -20,6 +20,15 @@ export default {
       title: 'Text',
     },
     {
+      name: 'textAlignment',
+      type: 'string',
+      title: 'Text alignment',
+      options: {
+        list: ['left', 'center', 'right'],
+        layout: 'radio',
+      },
+    },
+    {
       name: 'files',
       type: 'array',
       title: 'Files',
