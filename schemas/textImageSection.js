@@ -37,19 +37,12 @@ export default {
         hotspot: true,
       },
     },
-
-    {
-      title: 'Title',
-      name: 'title',
-      type: 'string',
-    },
     {
       title: 'External link',
       name: 'link',
       type: 'url',
       fieldset: 'link',
     },
-
     {
       name: 'mediaPosition',
       type: 'string',
