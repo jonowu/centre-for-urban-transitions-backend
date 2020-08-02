@@ -9,13 +9,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'description',
-      title: 'Description',
-      description: 'This description will appear on the "PhD Life" page.',
-      type: 'text',
-      rows: '3',
-    },
-    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -25,6 +18,26 @@ export default {
       },
     },
     {
+      name: 'description',
+      title: 'Description',
+      description: 'This description will appear on the "PhD Life" page.',
+      type: 'text',
+      rows: '3',
+    },
+    {
+      name: 'publishedAt',
+      title: 'Published at',
+      type: 'datetime',
+    },
+    /*
+    {
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: { type: 'author' },
+    },
+    */
+    {
       name: 'thumbnail',
       title: 'Thumbnail',
       type: 'image',
@@ -32,6 +45,14 @@ export default {
         hotspot: true,
       },
     },
+    /*
+    {
+      name: 'hero',
+      title: 'Hero',
+      description: 'Optional.',
+      type: 'hero',
+    },
+    */
     {
       name: 'content',
       title: 'Page Sections',

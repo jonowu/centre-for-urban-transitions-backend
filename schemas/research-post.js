@@ -9,13 +9,6 @@ export default {
       type: 'string',
     },
     {
-      name: 'description',
-      title: 'Description',
-      description: 'This description will appear on the "Our Research" page.',
-      type: 'text',
-      rows: '3',
-    },
-    {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -23,6 +16,13 @@ export default {
         source: 'title',
         maxLength: 96,
       },
+    },
+    {
+      name: 'description',
+      title: 'Description',
+      description: 'This description will appear on the "Our Research" page.',
+      type: 'text',
+      rows: '3',
     },
     {
       name: 'thumbnail',
