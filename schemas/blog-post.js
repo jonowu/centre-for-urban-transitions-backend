@@ -18,13 +18,6 @@ export default {
       },
     },
     {
-      name: 'description',
-      title: 'Description',
-      description: 'This description will appear on the "PhD Life" page.',
-      type: 'text',
-      rows: '3',
-    },
-    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
@@ -38,21 +31,28 @@ export default {
     },
     */
     {
+      name: 'description',
+      title: 'Description',
+      description: 'This description will appear on the "PhD Life" page.',
+      type: 'text',
+      rows: '3',
+    },
+    {
       name: 'thumbnail',
       title: 'Thumbnail',
+      description: 'This thumbnail will appear on the "Our Research" page.',
       type: 'image',
       options: {
         hotspot: true,
       },
     },
-    /*
     {
       name: 'hero',
       title: 'Hero',
-      description: 'Optional.',
+      description:
+        'Large image at the top of the page. To show no hero, ensure the image field is empty.',
       type: 'hero',
     },
-    */
     {
       name: 'content',
       title: 'Page Sections',

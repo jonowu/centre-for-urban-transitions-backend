@@ -27,10 +27,18 @@ export default {
     {
       name: 'thumbnail',
       title: 'Thumbnail',
+      description: 'This thumbnail will appear on the "Our Research" page.',
       type: 'image',
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: 'hero',
+      title: 'Hero',
+      description:
+        'Large image at the top of the page. To show no hero, ensure the image field is empty.',
+      type: 'hero',
     },
     {
       name: 'content',

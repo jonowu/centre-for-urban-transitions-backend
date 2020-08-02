@@ -4,6 +4,14 @@ export default {
   title: 'Hero',
   fields: [
     {
+      name: 'backgroundImage',
+      type: 'image',
+      title: 'Image',
+      options: {
+        hotspot: true,
+      },
+    },
+    {
       name: 'preHeading',
       type: 'string',
       title: 'Pre-Heading',
@@ -13,14 +21,6 @@ export default {
       name: 'heading',
       type: 'string',
       title: 'Heading',
-    },
-    {
-      name: 'backgroundImage',
-      type: 'image',
-      title: 'Background image',
-      options: {
-        hotspot: true,
-      },
     },
   ],
   preview: {
