@@ -6,7 +6,8 @@ export default {
     {
       name: 'label',
       type: 'string',
-      title: 'Label',
+      title: 'Pre-Heading',
+      description: 'Optional.',
     },
     {
       name: 'heading',

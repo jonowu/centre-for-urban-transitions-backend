@@ -5,7 +5,7 @@ export default {
   validation: (Rule) =>
     Rule.custom(
       (fields = {}) =>
-        !fields.page || !fields.link || 'Only one link type is allowed'
+        !fields.route || !fields.link || 'Only one link type is allowed'
     ),
   fieldsets: [
     {
@@ -42,6 +42,14 @@ export default {
       title: 'External link',
       name: 'link',
       type: 'url',
+      fieldset: 'link',
+    },
+    {
+      title: 'Internal link',
+      name: 'route',
+      description:
+        'Use this to link between pages on the website (e.g. "/our-research")',
+      type: 'string',
       fieldset: 'link',
     },
     {
