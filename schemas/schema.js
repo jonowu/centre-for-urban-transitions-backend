@@ -9,9 +9,6 @@ import blockContent from './blockContent';
 import category from './category';
 import researchPost from './research-post';
 import author from './author';
-import homePage from './homePage';
-import aboutPage from './aboutPage';
-import contactPage from './contactPage';
 import hero from './hero';
 import textSection from './textSection';
 import downloadSection from './downloadSection';
@@ -34,9 +31,6 @@ export default createSchema({
     researchPost,
     author,
     category,
-    homePage,
-    aboutPage,
-    contactPage,
     hero,
     textSection,
     textImageSection,
