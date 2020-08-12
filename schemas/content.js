@@ -6,5 +6,6 @@ export default {
     { type: 'textSection' },
     { type: 'textImageSection' },
     { type: 'downloadSection' },
+    { type: 'headingSection' },
   ],
 };
